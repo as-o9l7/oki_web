@@ -1,5 +1,32 @@
 @charset "UTF-8";
-
+/*ローディング画面*/
+#loading {
+    transition: all 3s; /*ローディングにかかる時間*/
+    background-color: #FFF;
+    z-index: 999;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  
+  .loading-text {
+      font-weight: bold;
+      text-align: center;
+  }
+  
+  .spin {
+      width: 64px;
+      height: auto;
+  }
+  
+  .loaded {
+      opacity: 0;
+      visibility: hidden;
+  }
+  
 body {
     margin: 0;
     margin-bottom: 1em;
